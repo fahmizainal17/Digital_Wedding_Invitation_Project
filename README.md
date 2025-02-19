@@ -2,7 +2,7 @@
 
 <!-- Badge to Visit Project -->
 <div align="center">
-    <a href="https://your-project-url.com">
+    <a href="[https://your-project-url.com](https://github.com/fahmizainal17/Digital_Wedding_Invitation_Project/)">
         <img src="https://img.shields.io/badge/Visit%20Digital%20Wedding%20Invitation%20App-brightgreen?style=for-the-badge&logo=react" alt="Visit Digital Wedding Invitation App"/>
     </a>
 </div>
@@ -155,16 +155,6 @@ graph TD
     J --> K[Display QR Code for Gifts]
     K --> L[End]
 ```
-
-### How to Use Mermaid Diagrams
-
-To render Mermaid diagrams in your Markdown files, you can use a Markdown viewer that supports Mermaid, such as:
-
-- **Visual Studio Code** with the **Markdown Preview Mermaid Support** extension.
-- **Typora**, a Markdown editor with built-in Mermaid support.
-- **GitHub** (with Mermaid syntax highlighting) or **GitLab** (with Mermaid support enabled).
-
-Simply copy the Mermaid code block into your Markdown file, and it will be rendered as a diagram when viewed with a compatible Markdown viewer.
 
 ---
 
