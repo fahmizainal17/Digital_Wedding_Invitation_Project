@@ -43,11 +43,31 @@
 
 /* New .App styles */
 .App {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f8f8f8;
   margin: 0;
   font-family: 'Jawi', serif;
+} 
+
+.rsvp-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rsvp-form, .google-map, .comment-section, .qr-code-placeholder {
+  margin: 20px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.comments p {
+  margin: 5px 0;
 }
