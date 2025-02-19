@@ -75,43 +75,69 @@ const InvitationCard = () => {
                 </p>
                 <div className="rsvp-section">
                     <form onSubmit={handleSubmit} className="rsvp-form">
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="Nama"
-                            required
-                        />
-                        <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="No. Telefon"
-                            required
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="E-mel"
-                            required
-                        />
-                        <select name="attendance" value={formData.attendance} onChange={handleChange} required>
-                            <option value="yes">Hadir</option>
-                            <option value="no">Tidak Hadir</option>
-                        </select>
-                        {formData.attendance === 'yes' && (
+                        <h2>RSVP</h2>
+                        <div className="form-group">
+                            <label htmlFor="name">Nama</label>
                             <input
-                                type="number"
-                                name="numberOfPeople"
-                                value={formData.numberOfPeople}
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
                                 onChange={handleChange}
-                                placeholder="Bilangan Orang"
+                                placeholder="Nama"
                                 required
                             />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="phone">No. Telefon</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                placeholder="No. Telefon"
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">E-mel</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="E-mel"
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="attendance">Kehadiran</label>
+                            <select
+                                id="attendance"
+                                name="attendance"
+                                value={formData.attendance}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="yes">Hadir</option>
+                                <option value="no">Tidak Hadir</option>
+                            </select>
+                        </div>
+                        {formData.attendance === 'yes' && (
+                            <div className="form-group">
+                                <label htmlFor="numberOfPeople">Bilangan Orang</label>
+                                <input
+                                    type="number"
+                                    id="numberOfPeople"
+                                    name="numberOfPeople"
+                                    value={formData.numberOfPeople}
+                                    onChange={handleChange}
+                                    placeholder="Bilangan Orang"
+                                    required
+                                />
+                            </div>
                         )}
                         <button type="submit" className="rsvp-button">
                             RSVP
