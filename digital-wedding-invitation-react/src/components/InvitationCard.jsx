@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './InvitationCard.css';
 
 const InvitationCard = () => {
@@ -53,23 +53,25 @@ const InvitationCard = () => {
                     Dengan mengharapkan rahmat dan redha Allah SWT, kami dengan penuh kebahagiaan mengumumkan perkahwinan anak-anak kami:
                 </p>
                 <h2 className="bride-groom">
-                    <strong>Muhammad Fahmi bin Zainal</strong>
-                    <span className="and-symbol"> & </span>
-                    <strong>Sifulan Binti Sifulan</strong>
+                    <div className="bride-groom-names">
+                        <strong>Fahmi Zainal</strong>
+                        <span className="and-symbol">&</span>
+                        <strong>Sifulan Binti Sifulan</strong>
+                    </div>
                 </h2>
                 <p className="details">
                     <strong>Tarikh:</strong> 31 Ogos 20XX<br />
                     <strong>Masa:</strong> 11:00 Pagi - 4:00 Petang<br />
-                    <strong>Tempat:</strong> Dewan Kolej Pendeta Za'ba, 43400 Seri Kembangan, Selangor
+                    <strong>Tempat:</strong> Dewan Kolej Pendeta Za&apos;ba, 43400 Seri Kembangan, Selangor
                 </p>
                 <button className="map-button" onClick={() => window.open('https://www.google.com/maps?q=Dewan+Kolej+Pendeta+Za%27ba,+43400+Seri+Kembangan,+Selangor', '_blank')}>
                     Lihat Peta
                 </button>
                 <p className="message">
-                    "Doa dan harapan kami, agar perkahwinan ini diberkati oleh Allah SWT, penuh cinta kasih, kebahagiaan, dan keharmonian sepanjang zaman. Mari kita sama-sama merayakan momen istimewa ini bersama keluarga dan rakan-rakan yang terkasih."
+                    &quot;Doa dan harapan kami, agar perkahwinan ini diberkati oleh Allah SWT, penuh cinta kasih, kebahagiaan, dan keharmonian sepanjang zaman. Mari kita sama-sama merayakan momen istimewa ini bersama keluarga dan rakan-rakan yang terkasih.&quot;
                 </p>
                 <p className="quran-verse">
-                    <strong>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."</strong>
+                    <strong>&quot;Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.&quot;</strong>
                     <br />
                     (Surah Ar-Rum, 30:21)
                 </p>
