@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5174/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Jemputan_kahmin_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5174/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/Users/fahmizainal/Desktop/DigiWed_Project/Digital_Wedding_Invitation_Project/digital-wedding-invitation-react/src/index.css">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/fahmizainal/Desktop/DigiWed_Project/Digital_Wedding_Invitation_Project/digital-wedding-invitation-react/src/App.css">#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* New .App styles */
+.App {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  margin: 0;
+  font-family: 'Jawi', serif;
+} 
+
+.rsvp-section {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rsvp-form, .google-map, .comment-section, .qr-code-placeholder {
+  margin: 20px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.comments p {
+  margin: 5px 0;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/fahmizainal/Desktop/DigiWed_Project/Digital_Wedding_Invitation_Project/digital-wedding-invitation-react/src/components/InvitationCard.css">/* General Styling */
+.invitation-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+    margin: 50px auto;
+    border: 2px solid #ff6f61;
+    overflow: hidden;
+    font-family: 'Georgia', serif; /* Elegant font */
+    color: #333;
+    position: relative;
+}
+
+/* Header Styling */
+.card-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wedding-image {
+    
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.wedding-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.card-title {
+    font-size: 32px;
+    margin-top: 10px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* Body Styling */
+.card-body {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.bride-groom {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #ff6f61;
+}
+
+.bride-groom-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.bride-groom .and-symbol {
+    font-size: 36px;
+    color: #ff4f41;
+    margin: 0 10px;
+}
+
+.details {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.quran-verse {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+/* RSVP Button */
+.rsvp-button {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rsvp-button:hover {
+    background-color: #ff4f41;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invitation-card {
+    animation: fadeIn 1s ease-in-out;
+}
+</style></head>
+  <body>
+    <div id="root"><div class="App"><div class="invitation-card"><div class="card-header"><img alt="Gambar Perkahwinan" class="wedding-image" src="./Jemputan_kahmin_files/wedding_image.jpg"><h1 class="card-title">Jemputan Kahwin</h1></div><div class="card-body"><p class="greeting">Dengan mengharapkan rahmat dan redha Allah SWT, kami dengan penuh kebahagiaan mengumumkan perkahwinan anak-anak kami:</p><h2 class="bride-groom"><div class="bride-groom-names"><strong>Fahmi Zainal</strong><span class="and-symbol">&amp;</span><strong>Sifulan Binti Sifulan</strong></div></h2><p class="details"><strong>Tarikh:</strong> 31 Ogos 20XX<br><strong>Masa:</strong> 11:00 Pagi - 4:00 Petang<br><strong>Tempat:</strong> Dewan Kolej Pendeta Za'ba, 43400 Seri Kembangan, Selangor</p><button class="map-button">Lihat Peta</button><p class="message">"Doa dan harapan kami, agar perkahwinan ini diberkati oleh Allah SWT, penuh cinta kasih, kebahagiaan, dan keharmonian sepanjang zaman. Mari kita sama-sama merayakan momen istimewa ini bersama keluarga dan rakan-rakan yang terkasih."</p><p class="quran-verse"><strong>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."</strong><br>(Surah Ar-Rum, 30:21)</p><div class="rsvp-section"><form class="rsvp-form"><h2>RSVP</h2><div class="form-group"><label for="name">Nama</label><input id="name" placeholder="Nama" required="" type="text" value="" name="name"></div><div class="form-group"><label for="phone">No. Telefon</label><input id="phone" placeholder="No. Telefon" required="" type="tel" value="" name="phone"></div><div class="form-group"><label for="email">E-mel</label><input id="email" placeholder="E-mel" required="" type="email" value="" name="email"></div><div class="form-group"><label for="attendance">Kehadiran</label><select id="attendance" name="attendance" required=""><option value="yes">Hadir</option><option value="no">Tidak Hadir</option></select></div><div class="form-group"><label for="numberOfPeople">Bilangan Orang</label><input id="numberOfPeople" placeholder="Bilangan Orang" required="" type="number" value="1" name="numberOfPeople"></div><button type="submit" class="rsvp-button">RSVP</button></form></div><div class="comment-section"><h3>Ucapan dan Doa Kahwin</h3><form class="comment-form"><textarea placeholder="Tinggalkan ucapan atau doa anda di sini..." required=""></textarea><button type="submit" class="comment-button">Hantar</button></form></div><div class="qr-code-section"><h3>Kod QR untuk Hadiah</h3><p>Silakan skan kod QR di bawah untuk memberikan hadiah kepada pasangan pengantin.</p><img alt="Kod QR Hadiah" class="qr-code" src="./Jemputan_kahmin_files/qr_code.jpeg"></div></div></div></div></div>
+    <script type="module" src="./Jemputan_kahmin_files/main.jsx"></script>
+  
+
+</body></html>
