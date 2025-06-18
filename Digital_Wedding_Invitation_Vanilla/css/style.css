@@ -1,3 +1,4 @@
+/* Global page setup */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -8,36 +9,46 @@ body {
     margin: 0;
 }
 
+/* Invitation Card */
 .invitation-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px;
+
+    /* ↑ Increased width for a more prominent card */
+    width: 500px;          
+    max-width: 90%;        /* remain responsive on small screens */
+    margin: 0 auto;        /* center horizontally */
 }
 
+/* Header image spans full card width */
 .invitation-card img {
-    max-width: 100%;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;  /* only top corners rounded */
 }
 
+/* Title */
 .invitation-card h1 {
-    font-size: 24px;
+    font-size: 28px;      /* bumped up for emphasis */
     margin-top: 20px;
 }
 
+/* Body text */
 .invitation-card p {
     font-size: 16px;
     margin: 10px 0;
 }
 
+/* RSVP button */
 .invitation-card button {
     background-color: #ff6f61;
     border: none;
     border-radius: 5px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;   /* a bit more padding for balance */
     font-size: 16px;
     cursor: pointer;
 }
