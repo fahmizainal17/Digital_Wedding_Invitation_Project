@@ -131,4 +131,4 @@ Then open your browser to the address shown (e.g. `http://localhost:5174/`).
 
 ## License
 
-MIT © 2025 Fahmi Zainal
+License © 2025 Fahmi Zainal
